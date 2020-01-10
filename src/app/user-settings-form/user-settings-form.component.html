@@ -8,8 +8,12 @@
             <input id="name"
                    name="name"
                    class="form-control"
-                   [(ngModel)]="userSettings.name" />
+                   [(ngModel)]="userSettings.name"
+                   required
+                   #classTest />
         </div>
+
+        <h3>{{ classTest.className }}</h3>
 
         <div class="form-check form-group">
             <input class="form-check-input"
