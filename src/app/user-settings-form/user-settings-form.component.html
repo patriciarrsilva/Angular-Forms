@@ -11,6 +11,7 @@
                    [(ngModel)]="userSettings.name"
                    required
                    #nameField="ngModel"
+                   (blur)="onBlur(nameField)"
                    [class.field-error]="form.submitted && nameField.invalid" />
             <div [hidden]="!form.submitted || nameField.valid"
                  class="alert alert-danger">Enter a name</div>
