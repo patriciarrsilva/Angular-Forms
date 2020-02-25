@@ -31,7 +31,7 @@ export class UserSettingsFormComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     console.log('in onSubmit: ', form.valid);
-    this.dataService.postUserSettingForm(this.userSettings).subscribe(
+    this.dataService.postUserSettingsForm(this.userSettings).subscribe(
       result => console.log('success: ', result),
       error => console.log('error: ', error)
     );
