@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   postUserSettingsForm(userSettings: UserSettings): Observable<any> {
-    return this.http.post('url', userSettings);
+    return this.http.post('https://putsreq.com/WlihRuAjh9DFqdHV7ZMe', userSettings);
     // return of(userSettings);
   }
 }
