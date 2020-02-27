@@ -19,6 +19,8 @@ export class UserSettingsFormComponent implements OnInit {
     notes: null
   };
 
+  singleModel = 'On';
+
   userSettings: UserSettings = { ...this.originalUserSettings };
   postError = false;
   postErrorMessage = '';
