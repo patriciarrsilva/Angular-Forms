@@ -22,6 +22,7 @@
       </div>
     </div>
 
+    <!--
     <button
       type="button"
       class="btn btn-primary"
@@ -33,6 +34,21 @@
     >
       {{ singleModel }}
     </button>
+    -->
+
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input
+        type="text"
+        placeholder="Start Date"
+        class="form-control"
+        [(ngModel)]="startDate"
+        name="startDate"
+        bsDatepicker
+      />
+    </div>
+
+    Start Date: {{ startDate }}
 
     <div class="form-check form-group">
       <input
