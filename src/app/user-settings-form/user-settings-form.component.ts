@@ -23,6 +23,8 @@ export class UserSettingsFormComponent implements OnInit {
 
   startDate: Date;
   startTime: Date;
+  userRating = 0;
+  maxRating = 10;
   userSettings: UserSettings = { ...this.originalUserSettings };
   postError = false;
   postErrorMessage = '';

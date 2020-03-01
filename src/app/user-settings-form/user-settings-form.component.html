@@ -57,7 +57,18 @@
       ></timepicker>
     </div>
 
-    Start Time: {{ startTime }}
+    <div>
+      User Rating
+      <rating
+        [(ngModel)]="userRating"
+        [max]="maxRating"
+        name="userRating"
+        id="userRating"
+        [titles]="['one', 'two', 'three']"
+      ></rating>
+    </div>
+
+    User Rating: {{ userRating }}
 
     <div class="form-check form-group">
       <input
